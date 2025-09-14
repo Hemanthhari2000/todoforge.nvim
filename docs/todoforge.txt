@@ -1,0 +1,41 @@
+* todoforge.nvim *
+
+TodoForge.nvim - A simple and fun Neovim plugin to manage your todos
+in a floating window.
+
+==============================================================================
+USAGE                                                         *todoforge-usage*
+
+Commands:
+    :Tdf
+        Opens the floating todo window.
+
+Keymaps (default):
+    <leader>tdf
+        Opens the floating todo window.
+
+==============================================================================
+CONFIGURATION                                            *todoforge-configuration*
+
+Example using lazy.nvim:
+
+    return {
+      "hemanthhari2000/todoforge.nvim",
+      opts = {
+        todo_file = "~/.todoforge.nvim/todo.md",
+        keymaps = {
+          open = "<leader>tdf",
+          float = {
+            quit = "q",
+            save = "<C-s>",
+          },
+        },
+      },
+    }
+
+==============================================================================
+ABOUT                                                       *todoforge-about*
+
+Author: Hemanth
+License: MIT
+Repository: https://github.com/hemanthhari2000/todoforge.nvim
