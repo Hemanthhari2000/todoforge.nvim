@@ -43,7 +43,8 @@ function M.open(todo_file)
 	local buf_handle = vim.fn.bufadd(todo_file)
 	vim.fn.bufload(buf_handle)
 
-	vim.bo[buf_handle].buflisted = true
+	vim.bo[buf_handle].buflisted = false
+	vim.bo[buf_handle].bufhidden = "wipe"
 	vim.bo[buf_handle].swapfile = false
 	vim.bo[buf_handle].modified = false
 
