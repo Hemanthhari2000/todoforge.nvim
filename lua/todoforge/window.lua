@@ -20,6 +20,12 @@ local function win_config()
 		border = "rounded",
 		title = "TodoForge",
 		title_pos = "center",
+		footer = string.format(
+			"%s Save  |  %s Quit",
+			config.options.keymaps.float.save,
+			config.options.keymaps.float.quit
+		),
+		footer_pos = "right",
 	}
 end
 
