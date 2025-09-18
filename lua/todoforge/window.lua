@@ -35,9 +35,6 @@ function M.open(todo_file)
 	if vim.fn.filereadable(todo_file) == 0 then
 		local template = {
 			"# TodoForge - Your Quick Todo Manager",
-			"",
-			"-- Press '" .. config.options.keymaps.float.save .. "' to save your changes.",
-			"-- Press '" .. config.options.keymaps.float.quit .. "' to close this window.",
 			"---------------------------------------------",
 			"",
 			"- [x] Install an awesome Neovim plugin called Todoforge.nvim",
